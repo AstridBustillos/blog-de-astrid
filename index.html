@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Proyecto contra los Mosquitos</title>
 
   <style>
@@ -15,21 +14,21 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f2fff8;
-      color: #24352d;
+      background: #eefaf4;
+      color: #23332c;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #16805b, #42b883);
+      background: linear-gradient(135deg, #0f6b4f, #35a978);
       color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 55px 20px;
     }
 
     header h1 {
       font-size: 42px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     header p {
@@ -37,20 +36,20 @@
     }
 
     nav {
-      background: #105b42;
+      background: #084c39;
       text-align: center;
-      padding: 15px;
+      padding: 16px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 16px;
+      margin: 0 14px;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #b9f5dc;
+      color: #bdf1da;
     }
 
     .contenedor {
@@ -59,23 +58,41 @@
       margin: 35px auto;
     }
 
-    .principal {
+    .datos {
       background: white;
-      padding: 35px;
       border-radius: 16px;
-      text-align: center;
+      padding: 30px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
-    .principal h2 {
-      color: #16805b;
-      margin-bottom: 15px;
+    .datos h2 {
+      color: #0f6b4f;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .dato {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .bienvenida {
+      background: #dff7ec;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .bienvenida h2 {
+      color: #0f6b4f;
+      margin-bottom: 12px;
     }
 
     .titulo {
-      color: #105b42;
-      margin: 30px 0 20px;
+      color: #084c39;
+      margin: 30px 0 18px;
     }
 
     .tarjetas {
@@ -89,44 +106,57 @@
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
     }
 
     .tarjeta h3 {
-      color: #16805b;
+      color: #13936a;
       margin-bottom: 10px;
     }
 
-    .propuesta {
-      background: #dff8ec;
-      padding: 30px;
+    .seccion {
       margin-top: 35px;
-      border-radius: 15px;
-    }
-
-    .propuesta h2 {
-      color: #105b42;
-      margin-bottom: 15px;
-    }
-
-    .beneficios {
       background: white;
       padding: 30px;
-      margin-top: 30px;
       border-radius: 15px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
-    .beneficios h2 {
-      color: #16805b;
+    .seccion h2 {
+      color: #0f6b4f;
       margin-bottom: 15px;
     }
 
+    .lista {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .lista li {
+      margin-bottom: 10px;
+    }
+
     footer {
-      background: #105b42;
+      background: #084c39;
       color: white;
       text-align: center;
       padding: 22px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
@@ -135,37 +165,48 @@
 
   <header>
     <h1>Proyecto contra los Mosquitos</h1>
-    <p>Una propuesta para reducir la presencia de mosquitos y proteger nuestra salud.</p>
+    <p>Prevención, protección y cuidado de nuestra comunidad</p>
   </header>
 
   <nav>
     <a href="#inicio">Inicio</a>
-    <a href="#problema">Problema</a>
+    <a href="#problema">Problemática</a>
     <a href="#propuesta">Propuesta</a>
-    <a href="#beneficios">Beneficios</a>
+    <a href="#prevencion">Prevención</a>
+    <a href="#conclusion">Conclusión</a>
   </nav>
 
   <main class="contenedor">
 
-    <section class="principal" id="inicio">
-      <h2>¡Bienvenidos a nuestro proyecto!</h2>
+    <section class="datos">
+      <h2>Datos del Proyecto</h2>
+
+      <p class="dato"><strong>Nombre:</strong> Astrid Bustillos</p>
+      <p class="dato"><strong>Curso:</strong> 1ro Alfa</p>
+      <p class="dato"><strong>Profesores participantes:</strong> Todos los docentes</p>
+      <p class="dato"><strong>Tema:</strong> Proyecto contra los mosquitos</p>
+    </section>
+
+    <section class="bienvenida" id="inicio">
+      <h2>Bienvenidos a nuestro proyecto</h2>
 
       <p>
-        Este blog presenta una propuesta para ayudar a combatir la presencia
-        de mosquitos mediante acciones de prevención y el uso responsable
-        de métodos repelentes.
+        Este proyecto tiene como objetivo informar sobre los problemas
+        relacionados con la presencia de mosquitos y presentar medidas
+        de prevención que pueden aplicarse en el hogar, la institución
+        educativa y la comunidad.
       </p>
     </section>
 
-    <h2 class="titulo" id="problema">¿Por qué son un problema los mosquitos?</h2>
+    <h2 class="titulo" id="problema">Problemática</h2>
 
     <section class="tarjetas">
 
       <article class="tarjeta">
-        <h3>Presencia de mosquitos</h3>
+        <h3>Reproducción de mosquitos</h3>
         <p>
-          Los mosquitos suelen reproducirse en lugares donde existe agua
-          acumulada y condiciones favorables para su desarrollo.
+          Los mosquitos pueden reproducirse en recipientes, charcos y
+          diferentes lugares donde exista agua acumulada.
         </p>
       </article>
 
@@ -173,62 +214,84 @@
         <h3>Riesgos para la salud</h3>
         <p>
           Algunas especies de mosquitos pueden transmitir enfermedades,
-          por lo que es importante disminuir su reproducción y evitar
-          sus picaduras.
+          por lo que su prevención es importante para proteger a las personas.
         </p>
       </article>
 
       <article class="tarjeta">
-        <h3>Prevención</h3>
+        <h3>Impacto en la comunidad</h3>
         <p>
-          Eliminar recipientes con agua estancada, mantener los espacios
-          limpios y utilizar protección adecuada son medidas importantes.
+          Una gran presencia de mosquitos puede afectar la comodidad,
+          el bienestar y la salud de las familias y de la comunidad.
         </p>
       </article>
 
     </section>
 
-    <section class="propuesta" id="propuesta">
+    <section class="seccion" id="propuesta">
       <h2>Nuestra propuesta</h2>
 
       <p>
-        Nuestro proyecto busca desarrollar una alternativa que ayude a
-        mantener alejados a los mosquitos y, al mismo tiempo, fomentar
-        hábitos de prevención dentro del hogar y la comunidad.
+        El proyecto busca promover acciones para disminuir la presencia
+        de mosquitos mediante la limpieza, la eliminación de criaderos
+        y el uso de métodos de protección adecuados.
       </p>
 
-      <br>
-
       <p>
-        Además del uso de repelentes, consideramos importante eliminar
-        posibles criaderos y mantener limpios los espacios donde vivimos.
+        También busca crear conciencia sobre la importancia de mantener
+        los espacios limpios y evitar la acumulación de agua.
       </p>
     </section>
 
-    <section class="beneficios" id="beneficios">
-      <h2>Beneficios del proyecto</h2>
+    <section class="seccion" id="prevencion">
+      <h2>Medidas de prevención</h2>
+
+      <ul class="lista">
+        <li>Eliminar recipientes que acumulen agua.</li>
+        <li>Mantener patios y espacios exteriores limpios.</li>
+        <li>Tapar correctamente tanques y depósitos de agua.</li>
+        <li>Usar repelentes de manera responsable.</li>
+        <li>Utilizar mosquiteros cuando sea necesario.</li>
+        <li>Informar a otras personas sobre cómo prevenir criaderos.</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Objetivo del proyecto</h2>
 
       <p>
-        ✔ Ayuda a disminuir la presencia de mosquitos.
+        Promover medidas de prevención que ayuden a reducir la presencia
+        de mosquitos y fomentar el cuidado de la salud y del entorno.
       </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Beneficios</h2>
+
+      <ul class="lista">
+        <li>Reduce posibles criaderos de mosquitos.</li>
+        <li>Promueve hábitos de limpieza.</li>
+        <li>Ayuda a proteger la salud de las personas.</li>
+        <li>Genera conciencia dentro de la comunidad.</li>
+        <li>Contribuye a mantener espacios más seguros.</li>
+      </ul>
+    </section>
+
+    <section class="seccion" id="conclusion">
+      <h2>Conclusión</h2>
 
       <p>
-        ✔ Promueve hábitos de limpieza y prevención.
-      </p>
-
-      <p>
-        ✔ Genera conciencia sobre el cuidado de la salud.
-      </p>
-
-      <p>
-        ✔ Puede contribuir a mantener espacios más seguros y agradables.
+        La prevención es una de las mejores herramientas para disminuir
+        la presencia de mosquitos. Con pequeñas acciones realizadas por
+        estudiantes, docentes y familias podemos contribuir a mantener
+        espacios más limpios, saludables y seguros.
       </p>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Proyecto contra los Mosquitos | Blog de Astrid</p>
+    <p>© 2026 Proyecto contra los Mosquitos | Astrid Bustillos - 1ro Alfa</p>
   </footer>
 
 </body>
