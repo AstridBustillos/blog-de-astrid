@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Astrid</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f3ff;
+      color: #2d2340;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6c4ab6, #a084dc);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #3d2c5e;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d8c7ff;
+    }
+
+    .contenedor {
+      width: 90%;
+      max-width: 1000px;
+      margin: 35px auto;
+    }
+
+    .bienvenida {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .bienvenida h2 {
+      color: #6c4ab6;
+      margin-bottom: 15px;
+    }
+
+    .publicaciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+
+    .tarjeta h3 {
+      color: #6c4ab6;
+      margin-bottom: 10px;
+    }
+
+    .sobre-mi {
+      margin-top: 35px;
+      background: #ede4ff;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .sobre-mi h2 {
+      color: #5a3d91;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #3d2c5e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Blog de Astrid</h1>
+    <p>Un espacio para compartir ideas, experiencias y cosas interesantes.</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#publicaciones">Publicaciones</a>
+    <a href="#sobre-mi">Sobre mí</a>
+  </nav>
+
+  <main class="contenedor">
+
+    <section class="bienvenida" id="inicio">
+      <h2>¡Bienvenidos a mi blog!</h2>
+      <p>
+        Este es un espacio personal donde compartiré temas que me gustan,
+        experiencias, pensamientos y contenido interesante.
+      </p>
+    </section>
+
+    <section id="publicaciones">
+      <h2 style="margin-bottom:20px;">Últimas publicaciones</h2>
+
+      <div class="publicaciones">
+
+        <article class="tarjeta">
+          <h3>Mi primera publicación</h3>
+          <p>
+            Hoy comienzo este nuevo blog. Espero poder compartir muchas
+            ideas y aprender nuevas cosas durante este proyecto.
+          </p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Mis pasatiempos</h3>
+          <p>
+            En mi tiempo libre me gusta escuchar música, ver películas,
+            compartir con mis amigos y descubrir cosas nuevas.
+          </p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Mis metas</h3>
+          <p>
+            Una de mis metas es seguir aprendiendo, mejorar cada día
+            y aprovechar las oportunidades que se presenten.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy Astrid. Creé este blog para compartir un poco sobre mis
+        intereses, experiencias y temas que considero importantes.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Blog de Astrid | Creado con GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
